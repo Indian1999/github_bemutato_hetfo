@@ -12,5 +12,8 @@ for i in range(1, 101):
     row = random.randrange(0, len(matrix))
     col = random.randrange(0, len(matrix[row]))
     matrix[row][col] = i
+    plt.imshow(matrix)
+    plt.savefig(f"Képek/matrix{i}.png")
+    plt.close()
     
     
